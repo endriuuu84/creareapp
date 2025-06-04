@@ -205,10 +205,11 @@ p {
     left: 0;
     right: 0;
     z-index: 9999;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    border-bottom: 2px solid rgba(0, 212, 255, 0.3);
     transition: all var(--transition-normal);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .header.scrolled {
@@ -218,7 +219,7 @@ p {
 }
 
 .navbar {
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-lg) 0;
 }
 
 .nav-wrapper {
@@ -231,7 +232,7 @@ p {
     display: flex;
     align-items: center;
     font-weight: 800;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     text-decoration: none;
     position: relative;
 }
@@ -241,13 +242,15 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.5));
+    filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.8));
     transition: all var(--transition-normal);
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
 .logo:hover .logo-text {
-    filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.8));
+    filter: drop-shadow(0 0 30px rgba(0, 212, 255, 1));
     transform: scale(1.05);
+    text-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
 }
 
 .nav-menu {
