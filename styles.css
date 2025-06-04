@@ -219,7 +219,7 @@ p {
 }
 
 .navbar {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-sm) 0;
 }
 
 .nav-wrapper {
@@ -232,7 +232,7 @@ p {
     display: flex;
     align-items: center;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-decoration: none;
     position: relative;
 }
@@ -349,7 +349,7 @@ p {
     background: var(--bg-secondary);
     position: relative;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 80px;
     border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
     margin: 0 var(--spacing-md);
     box-shadow: var(--shadow-dark);
