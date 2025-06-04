@@ -56,10 +56,25 @@
         ],
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+39-XXX-XXXXXXX",
+            "telephone": "+39-329-745-1593",
+            "email": "info@creareapp.it",
             "contactType": "sales",
             "areaServed": "IT",
             "availableLanguage": ["Italian", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IT",
+            "addressLocality": "[CITTÀ]",
+            "postalCode": "[CAP]",
+            "streetAddress": "[INDIRIZZO COMPLETO]"
+        },
+        "foundingDate": "2025",
+        "numberOfEmployees": "1-5",
+        "knowsAbout": ["Sviluppo App Mobile", "iOS", "Android", "React Native", "Flutter", "Progressive Web App"],
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Italy"
         }
     }
     </script>
@@ -431,7 +446,7 @@
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3>App Base</h3>
-                    <div class="price">€1.500</div>
+                    <div class="price">A partire da €1.500</div>
                     <p>Perfetta per iniziare</p>
                     <ul>
                         <li>Design personalizzato</li>
@@ -443,7 +458,7 @@
                 
                 <div class="pricing-card featured">
                     <h3>App Professionale</h3>
-                    <div class="price">€3.500</div>
+                    <div class="price">A partire da €3.500</div>
                     <p>Soluzione completa</p>
                     <ul>
                         <li>Design avanzato</li>
@@ -581,40 +596,31 @@
                 <div class="footer-section">
                     <h4>Servizi</h4>
                     <ul>
-                        <li><a href="/sviluppo-app-native">Sviluppo App Native</a></li>
-                        <li><a href="/app-cross-platform">App Cross-Platform</a></li>
-                        <li><a href="/consulenza-mobile">Consulenza Mobile</a></li>
-                        <li><a href="/manutenzione-app">Manutenzione App</a></li>
+                        <li><a href="#servizi">Sviluppo App Mobile</a></li>
+                        <li><a href="#tipologie">Tipologie App</a></li>
+                        <li><a href="#processo">Come Lavoriamo</a></li>
+                        <li><a href="#portfolio">Tecnologie</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Tipologie App</h4>
+                    <h4>Informazioni</h4>
                     <ul>
-                        <li><a href="/app-vetrina">App Vetrina</a></li>
-                        <li><a href="/app-custom">App Personalizzate</a></li>
-                        <li><a href="/mvp-startup">MVP per Startup</a></li>
-                        <li><a href="/dashboard-aziendali">Dashboard Mobile</a></li>
+                        <li><a href="#prezzi">Prezzi</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                        <li><a href="mailto:info@creareapp.it">Email</a></li>
+                        <li><a href="tel:+393297451593">Telefono</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Risorse</h4>
+                    <h4>Legale</h4>
                     <ul>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/guida-sviluppo-app">Guida Sviluppo App</a></li>
-                        <li><a href="/costo-app">Calcolatore Costi</a></li>
-                        <li><a href="/case-studies">Case Studies</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Azienda</h4>
-                    <ul>
-                        <li><a href="/chi-siamo">Chi Siamo</a></li>
-                        <li><a href="/portfolio">Portfolio</a></li>
-                        <li><a href="/contatti">Contatti</a></li>
-                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/termini-servizio">Termini di Servizio</a></li>
+                        <li><a href="/cookie-policy">Cookie Policy</a></li>
+                        <li><a href="/informazioni-societarie">Info Societarie</a></li>
+                        <li><a href="/diritto-recesso">Diritto di Recesso</a></li>
                     </ul>
                 </div>
             </div>
@@ -625,48 +631,157 @@
         </div>
     </footer>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07J7JCFT47"></script>
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <strong>🍪 Utilizziamo i cookie</strong><br>
+                Questo sito utilizza cookie tecnici e, previo consenso, cookie analitici per migliorare la tua esperienza. 
+                <a href="/cookie-policy">Leggi la Cookie Policy</a> | 
+                <a href="/privacy-policy">Privacy Policy</a>
+            </div>
+            <div class="cookie-banner-actions">
+                <button id="cookie-settings" class="cookie-btn cookie-btn-settings">Impostazioni</button>
+                <button id="cookie-decline" class="cookie-btn cookie-btn-decline">Rifiuta</button>
+                <button id="cookie-accept" class="cookie-btn cookie-btn-accept">Accetta tutti</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google tag (gtag.js) - Loaded conditionally -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-07J7JCFT47', {
-            page_title: 'CreareApp.it - Sviluppo App Mobile',
-            custom_map: {
-                dimension1: 'user_type',
-                dimension2: 'page_category'
+        // Cookie management system
+        class CookieManager {
+            constructor() {
+                this.hasConsent = this.getConsent();
+                this.banner = document.getElementById('cookie-banner');
+                this.initBanner();
+                this.loadAnalytics();
             }
-        });
-        
-        // Track key interactions
-        gtag('event', 'page_view', {
-            page_title: document.title,
-            page_location: window.location.href
-        });
-        
-        // Track form submissions
+
+            getConsent() {
+                const consent = localStorage.getItem('cookie-consent');
+                return consent === 'accepted';
+            }
+
+            setConsent(accepted) {
+                localStorage.setItem('cookie-consent', accepted ? 'accepted' : 'declined');
+                localStorage.setItem('cookie-consent-date', new Date().toISOString());
+                this.hasConsent = accepted;
+            }
+
+            showBanner() {
+                // Show banner if no consent decision made
+                const consent = localStorage.getItem('cookie-consent');
+                if (!consent) {
+                    setTimeout(() => {
+                        this.banner.classList.add('show');
+                    }, 1000);
+                }
+            }
+
+            hideBanner() {
+                this.banner.classList.remove('show');
+            }
+
+            initBanner() {
+                // Show banner if needed
+                this.showBanner();
+
+                // Accept button
+                document.getElementById('cookie-accept').addEventListener('click', () => {
+                    this.setConsent(true);
+                    this.hideBanner();
+                    this.loadAnalytics();
+                    location.reload(); // Reload to apply analytics
+                });
+
+                // Decline button
+                document.getElementById('cookie-decline').addEventListener('click', () => {
+                    this.setConsent(false);
+                    this.hideBanner();
+                    this.removeAnalytics();
+                });
+
+                // Settings button
+                document.getElementById('cookie-settings').addEventListener('click', () => {
+                    window.open('/cookie-policy', '_blank');
+                });
+            }
+
+            loadAnalytics() {
+                if (!this.hasConsent) return;
+
+                // Load Google Analytics only with consent
+                if (!window.gtag) {
+                    const script = document.createElement('script');
+                    script.async = true;
+                    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-07J7JCFT47';
+                    document.head.appendChild(script);
+
+                    script.onload = () => {
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        window.gtag = gtag;
+                        
+                        gtag('js', new Date());
+                        gtag('config', 'G-07J7JCFT47', {
+                            anonymize_ip: true,
+                            page_title: 'CreareApp.it - Sviluppo App Mobile'
+                        });
+                        
+                        // Track key interactions
+                        gtag('event', 'page_view', {
+                            page_title: document.title,
+                            page_location: window.location.href
+                        });
+                        
+                        this.setupEventTracking();
+                    };
+                }
+            }
+
+            removeAnalytics() {
+                // Remove Google Analytics cookies
+                const cookies = document.cookie.split(";");
+                cookies.forEach(cookie => {
+                    const eqPos = cookie.indexOf("=");
+                    const name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+                    if (name.startsWith('_ga') || name.startsWith('_gid')) {
+                        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+                    }
+                });
+            }
+
+            setupEventTracking() {
+                if (!this.hasConsent || !window.gtag) return;
+
+                // Track form submissions
+                const contactForm = document.querySelector('.contact-form');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', function() {
+                        gtag('event', 'form_submit', {
+                            event_category: 'engagement',
+                            event_label: 'contact_form'
+                        });
+                    });
+                }
+                
+                // Track CTA clicks
+                document.querySelectorAll('.btn-primary').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        gtag('event', 'cta_click', {
+                            event_category: 'engagement',
+                            event_label: this.textContent.trim()
+                        });
+                    });
+                });
+            }
+        }
+
+        // Initialize cookie manager when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.querySelector('.contact-form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function() {
-                    gtag('event', 'form_submit', {
-                        event_category: 'engagement',
-                        event_label: 'contact_form'
-                    });
-                });
-            }
-            
-            // Track CTA clicks
-            document.querySelectorAll('.btn-primary').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    gtag('event', 'cta_click', {
-                        event_category: 'engagement',
-                        event_label: this.textContent.trim()
-                    });
-                });
-            });
+            new CookieManager();
         });
     </script>
     
