@@ -96,7 +96,7 @@
                         <li><a href="#prezzi">Prezzi</a></li>
                         <li><a href="#contatti" class="cta-button">Richiedi Preventivo</a></li>
                     </ul>
-                    <button class="mobile-menu-toggle" aria-label="Menu">
+                    <button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -224,7 +224,6 @@
                         </ul>
                     </div>
                     <div class="app-example-cta">
-                        <div class="app-price">Da €2.500</div>
                         <a href="#contatti" class="app-cta-btn">Richiedi Info</a>
                     </div>
                 </div>
@@ -246,7 +245,6 @@
                         </ul>
                     </div>
                     <div class="app-example-cta">
-                        <div class="app-price">Da €5.000</div>
                         <a href="#contatti" class="app-cta-btn">Richiedi Info</a>
                     </div>
                 </div>
@@ -268,7 +266,6 @@
                         </ul>
                     </div>
                     <div class="app-example-cta">
-                        <div class="app-price">Da €3.500</div>
                         <a href="#contatti" class="app-cta-btn">Richiedi Info</a>
                     </div>
                 </div>
@@ -290,7 +287,6 @@
                         </ul>
                     </div>
                     <div class="app-example-cta">
-                        <div class="app-price">Da €2.800</div>
                         <a href="#contatti" class="app-cta-btn">Richiedi Info</a>
                     </div>
                 </div>
@@ -312,7 +308,6 @@
                         </ul>
                     </div>
                     <div class="app-example-cta">
-                        <div class="app-price">Da €3.200</div>
                         <a href="#contatti" class="app-cta-btn">Richiedi Info</a>
                     </div>
                 </div>
@@ -334,7 +329,6 @@
                         </ul>
                     </div>
                     <div class="app-example-cta">
-                        <div class="app-price">Da €4.000</div>
                         <a href="#contatti" class="app-cta-btn">Richiedi Info</a>
                     </div>
                 </div>
@@ -357,7 +351,6 @@
                         </ul>
                     </div>
                     <div class="app-example-cta">
-                        <div class="app-price">Preventivo Gratuito</div>
                         <a href="#contatti" class="app-cta-btn">Inizia Progetto</a>
                     </div>
                 </div>
@@ -903,6 +896,39 @@
         // Initialize cookie manager when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
             new CookieManager();
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            
+            navMenu.classList.toggle('mobile-open');
+            mobileToggle.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('mobile-open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close mobile menu when clicking on links
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const navMenu = document.querySelector('.nav-menu');
+                    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+                    
+                    if (navMenu.classList.contains('mobile-open')) {
+                        navMenu.classList.remove('mobile-open');
+                        mobileToggle.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
         });
     </script>
     
