@@ -559,13 +559,25 @@
         </div>
     </footer>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CREAREAPP2024"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+        gtag('config', 'G-CREAREAPP2024', {
+            page_title: 'CreareApp.it - Sviluppo App Mobile',
+            custom_map: {
+                dimension1: 'user_type',
+                dimension2: 'page_category'
+            }
+        });
+        
+        // Track key interactions
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href
+        });
     </script>
     
     <!-- Google Search Console Verification -->

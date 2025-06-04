@@ -1,0 +1,24 @@
+{
+  "name": "seo-ai-optimizer",
+  "version": "1.0.0",
+  "description": "Sistema di ottimizzazione automatica SEO con AI",
+  "main": "optimizer.js",
+  "scripts": {
+    "start": "node optimizer.js",
+    "dev": "nodemon optimizer.js",
+    "analyze": "node analyzer.js",
+    "optimize": "node auto-optimizer.js"
+  },
+  "dependencies": {
+    "openai": "^4.24.1",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.2",
+    "fs-extra": "^11.2.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.3.1",
+    "puppeteer": "^21.6.1",
+    "diff": "^5.1.0",
+    "natural": "^6.7.0",
+    "compromise": "^14.10.0"
+  }
+}
