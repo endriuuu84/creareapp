@@ -1,0 +1,159 @@
+/* Alerts Panel Styles */
+.alerts-panel {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.alerts-header {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alerts-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.alerts-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alerts-count {
+  background: #3b82f6;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.clear-alerts-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.clear-alerts-btn:hover {
+  background: #e2e8f0;
+}
+
+.alerts-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.alert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.2s;
+}
+
+.alert-item:hover {
+  background: #f8fafc;
+}
+
+.alert-item:last-child {
+  border-bottom: none;
+}
+
+.alert-item.success {
+  border-left: 3px solid #10b981;
+}
+
+.alert-item.warning {
+  border-left: 3px solid #f59e0b;
+}
+
+.alert-item.error {
+  border-left: 3px solid #ef4444;
+}
+
+.alert-item.info {
+  border-left: 3px solid #3b82f6;
+}
+
+.alert-icon {
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.alert-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.alert-message {
+  font-size: 13px;
+  color: #334155;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.alert-time {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.no-alerts {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.no-alerts-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.no-alerts p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+.alerts-footer {
+  padding: 8px 16px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.more-alerts {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Custom Scrollbar */
+.alerts-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.alerts-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.alerts-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+
+.alerts-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
