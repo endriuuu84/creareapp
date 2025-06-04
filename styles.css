@@ -364,7 +364,7 @@ p {
 /* Mobile Menu Overlay */
 @media (max-width: 768px) {
     .nav-menu {
-        display: none;
+        display: none !important;
         position: fixed;
         top: 60px;
         left: 0;
@@ -378,16 +378,16 @@ p {
         z-index: 1000;
         gap: 0;
         padding: var(--spacing-lg);
-        animation: slideDown 0.3s ease-out;
         overflow-y: auto;
         list-style: none;
     }
     
     .nav-menu.mobile-open {
         display: flex !important;
+        animation: slideDown 0.3s ease-out;
     }
     
-    .nav-menu li {
+    .nav-menu.mobile-open li {
         list-style: none;
         width: 100%;
         opacity: 0;
@@ -396,52 +396,61 @@ p {
         display: block;
     }
     
-    .nav-menu li:nth-child(1) { animation-delay: 0.05s; }
-    .nav-menu li:nth-child(2) { animation-delay: 0.1s; }
-    .nav-menu li:nth-child(3) { animation-delay: 0.15s; }
-    .nav-menu li:nth-child(4) { animation-delay: 0.2s; }
-    .nav-menu li:nth-child(5) { animation-delay: 0.25s; }
-    .nav-menu li:nth-child(6) { animation-delay: 0.3s; }
+    .nav-menu.mobile-open li:nth-child(1) { animation-delay: 0.05s; }
+    .nav-menu.mobile-open li:nth-child(2) { animation-delay: 0.1s; }
+    .nav-menu.mobile-open li:nth-child(3) { animation-delay: 0.15s; }
+    .nav-menu.mobile-open li:nth-child(4) { animation-delay: 0.2s; }
+    .nav-menu.mobile-open li:nth-child(5) { animation-delay: 0.25s; }
+    .nav-menu.mobile-open li:nth-child(6) { animation-delay: 0.3s; }
     
-    .nav-menu a {
-        font-size: 1rem;
-        padding: var(--spacing-md);
-        display: block;
-        width: 100%;
-        text-align: left;
-        color: var(--text-primary);
-        text-decoration: none;
-        border-radius: var(--radius-md);
-        background: transparent;
-        border: 1px solid transparent;
-        transition: all var(--transition-normal);
-        font-weight: 500;
+    .nav-menu.mobile-open a {
+        font-size: 1rem !important;
+        padding: var(--spacing-md) !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+        color: var(--text-primary) !important;
+        text-decoration: none !important;
+        border-radius: var(--radius-md) !important;
+        background: transparent !important;
+        border: 1px solid transparent !important;
+        transition: all var(--transition-normal) !important;
+        font-weight: 500 !important;
+        transform: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
     }
     
-    .nav-menu a:hover,
-    .nav-menu a:active {
-        background: rgba(0, 212, 255, 0.1);
-        border-color: rgba(0, 212, 255, 0.3);
-        color: var(--neon-blue);
-        padding-left: var(--spacing-lg);
-        transform: none;
-        text-shadow: none;
-        box-shadow: none;
+    .nav-menu.mobile-open a::before {
+        display: none !important;
     }
     
-    .nav-menu .cta-button {
+    .nav-menu.mobile-open a:hover,
+    .nav-menu.mobile-open a:active {
+        background: rgba(0, 212, 255, 0.1) !important;
+        border-color: rgba(0, 212, 255, 0.3) !important;
+        color: var(--neon-blue) !important;
+        padding-left: var(--spacing-lg) !important;
+        transform: none !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    
+    .nav-menu.mobile-open .cta-button {
         background: var(--gradient-primary) !important;
         border: 1px solid rgba(0, 212, 255, 0.5) !important;
         color: var(--text-primary) !important;
         text-align: center !important;
-        margin-top: var(--spacing-md);
+        margin-top: var(--spacing-md) !important;
         font-weight: 600 !important;
+        padding: var(--spacing-md) !important;
     }
     
-    .nav-menu .cta-button:hover {
+    .nav-menu.mobile-open .cta-button:hover {
         background: var(--gradient-secondary) !important;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3) !important;
+        padding-left: var(--spacing-md) !important;
     }
 }
 
