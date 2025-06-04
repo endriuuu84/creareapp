@@ -559,13 +559,14 @@
         </div>
     </footer>
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CREAREAPP2024"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07J7JCFT47"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-CREAREAPP2024', {
+        
+        gtag('config', 'G-07J7JCFT47', {
             page_title: 'CreareApp.it - Sviluppo App Mobile',
             custom_map: {
                 dimension1: 'user_type',
@@ -577,6 +578,29 @@
         gtag('event', 'page_view', {
             page_title: document.title,
             page_location: window.location.href
+        });
+        
+        // Track form submissions
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function() {
+                    gtag('event', 'form_submit', {
+                        event_category: 'engagement',
+                        event_label: 'contact_form'
+                    });
+                });
+            }
+            
+            // Track CTA clicks
+            document.querySelectorAll('.btn-primary').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    gtag('event', 'cta_click', {
+                        event_category: 'engagement',
+                        event_label: this.textContent.trim()
+                    });
+                });
+            });
         });
     </script>
     
