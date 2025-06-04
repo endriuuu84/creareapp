@@ -363,94 +363,93 @@ p {
 
 /* Mobile Menu Overlay */
 @media (max-width: 768px) {
+    /* Base mobile menu styles */
     .nav-menu {
         display: none !important;
         position: fixed;
-        top: 60px;
+        top: 70px;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(10, 10, 10, 0.98);
-        backdrop-filter: blur(20px);
+        background: #0a0a0a;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: stretch;
-        z-index: 1000;
+        align-items: flex-start;
+        z-index: 999;
         gap: 0;
-        padding: var(--spacing-lg);
+        padding: 2rem;
         overflow-y: auto;
         list-style: none;
     }
     
+    /* When menu is open */
     .nav-menu.mobile-open {
-        display: flex !important;
-        animation: slideDown 0.3s ease-out;
+        display: block !important;
     }
     
-    .nav-menu.mobile-open li {
-        list-style: none;
-        width: 100%;
-        opacity: 0;
-        animation: fadeInItem 0.3s ease-out forwards;
-        margin-bottom: var(--spacing-xs);
-        display: block;
+    /* List items */
+    .nav-menu li {
+        list-style: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        opacity: 1 !important;
     }
     
-    .nav-menu.mobile-open li:nth-child(1) { animation-delay: 0.05s; }
-    .nav-menu.mobile-open li:nth-child(2) { animation-delay: 0.1s; }
-    .nav-menu.mobile-open li:nth-child(3) { animation-delay: 0.15s; }
-    .nav-menu.mobile-open li:nth-child(4) { animation-delay: 0.2s; }
-    .nav-menu.mobile-open li:nth-child(5) { animation-delay: 0.25s; }
-    .nav-menu.mobile-open li:nth-child(6) { animation-delay: 0.3s; }
-    
-    .nav-menu.mobile-open a {
-        font-size: 1rem !important;
-        padding: var(--spacing-md) !important;
+    /* Links styling */
+    .nav-menu a {
+        font-size: 1.1rem !important;
+        padding: 1rem !important;
         display: block !important;
         width: 100% !important;
         text-align: left !important;
-        color: var(--text-primary) !important;
+        color: #ffffff !important;
         text-decoration: none !important;
-        border-radius: var(--radius-md) !important;
+        border-radius: 8px !important;
         background: transparent !important;
-        border: 1px solid transparent !important;
-        transition: all var(--transition-normal) !important;
+        border: none !important;
+        transition: all 0.3s ease !important;
         font-weight: 500 !important;
         transform: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
+        margin-bottom: 0.5rem !important;
     }
     
-    .nav-menu.mobile-open a::before {
+    /* Remove desktop pseudo elements */
+    .nav-menu a::before,
+    .nav-menu a::after {
         display: none !important;
     }
     
-    .nav-menu.mobile-open a:hover,
-    .nav-menu.mobile-open a:active {
+    /* Hover states */
+    .nav-menu a:hover,
+    .nav-menu a:active {
         background: rgba(0, 212, 255, 0.1) !important;
-        border-color: rgba(0, 212, 255, 0.3) !important;
-        color: var(--neon-blue) !important;
-        padding-left: var(--spacing-lg) !important;
+        color: #00d4ff !important;
+        padding-left: 1.5rem !important;
         transform: none !important;
         text-shadow: none !important;
         box-shadow: none !important;
+        border: none !important;
     }
     
-    .nav-menu.mobile-open .cta-button {
-        background: var(--gradient-primary) !important;
-        border: 1px solid rgba(0, 212, 255, 0.5) !important;
-        color: var(--text-primary) !important;
+    /* CTA button special styling */
+    .nav-menu .cta-button {
+        background: linear-gradient(135deg, #00d4ff 0%, #b347d9 100%) !important;
+        color: #ffffff !important;
         text-align: center !important;
-        margin-top: var(--spacing-md) !important;
+        margin-top: 1rem !important;
         font-weight: 600 !important;
-        padding: var(--spacing-md) !important;
+        padding: 1rem !important;
     }
     
-    .nav-menu.mobile-open .cta-button:hover {
-        background: var(--gradient-secondary) !important;
+    .nav-menu .cta-button:hover {
+        background: linear-gradient(135deg, #39ff14 0%, #00d4ff 100%) !important;
         transform: translateY(-2px) !important;
         box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3) !important;
-        padding-left: var(--spacing-md) !important;
+        padding-left: 1rem !important;
     }
 }
 
