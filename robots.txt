@@ -1,0 +1,23 @@
+# Robots.txt per Sviluppo App Mobile
+# Permette l'accesso a tutti i crawler dei motori di ricerca
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Sitemap
+Sitemap: https://creareapp.it/sitemap.xml
+
+# Crawl-delay per bot meno importanti
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Googlebot specifico
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
