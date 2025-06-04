@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grazie per il tuo messaggio | CreareApp.it</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/" class="logo">
+                        <span class="logo-text">CreareApp</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Thank You Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Grazie per il tuo messaggio! 🚀</h1>
+                <p class="hero-subtitle">Abbiamo ricevuto la tua richiesta e ti risponderemo entro 24 ore. Nel frattempo, puoi contattarci anche su WhatsApp per una risposta più veloce.</p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/393297451593?text=Ciao,%20ho%20appena%20inviato%20un%20messaggio%20dal%20sito" class="btn btn-primary">Scrivici su WhatsApp</a>
+                    <a href="/" class="btn btn-secondary">Torna alla Home</a>
+                </div>
+                
+                <div class="thank-you-info">
+                    <div class="info-box">
+                        <h3>📧 Email</h3>
+                        <p>info@creareapp.it</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📱 WhatsApp</h3>
+                        <p>+39 329 745 1593</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>⏰ Tempi di risposta</h3>
+                        <p>Entro 24 ore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07J7JCFT47"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-07J7JCFT47');
+        
+        // Track form completion
+        gtag('event', 'form_submit_complete', {
+            event_category: 'engagement',
+            event_label: 'contact_form_thank_you'
+        });
+    </script>
+</body>
+</html>

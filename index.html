@@ -96,7 +96,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Sviluppo App Mobile, Web App e App Ibride Professionali che Trasformano le Tue Idee in Realtà</h1>
-                <p class="hero-subtitle">Con CreareApp.it sviluppi app mobile, web app e applicazioni ibride di successo. Specialisti nello sviluppo applicazioni iOS, Android, PWA e Cross-Platform personalizzate. Scopri come sviluppare app che fanno crescere il tuo business.</p>
+                <p class="hero-subtitle">Con CreareApp.it sviluppi app mobile, web app e applicazioni ibride di successo. Siamo un team di designer e sviluppatori che ha trasformato la passione per il coding in una realtà professionale. Specialisti nello sviluppo applicazioni iOS, Android, PWA e Cross-Platform personalizzate.</p>
                 <div class="hero-cta">
                     <a href="#contatti" class="btn btn-primary">Inizia il Tuo Progetto</a>
                     <a href="#portfolio" class="btn btn-secondary">Vedi le Tecnologie</a>
@@ -279,8 +279,8 @@
     <!-- Technologies Section -->
     <section id="portfolio" class="technologies">
         <div class="container">
-            <h2 class="section-title">Sviluppiamo con <span class="highlight">Tecnologie Performanti, Scalabili e Sicure</span></h2>
-            <p class="section-subtitle">Le tecnologie più avanzate per lo sviluppo di app mobile professionali che garantiscono performance ottimali e scalabilità</p>
+            <h2 class="section-title">Stack Tecnologico <span class="highlight">Moderno e All'Avanguardia</span></h2>
+            <p class="section-subtitle">Utilizziamo le tecnologie più innovative e affidabili per creare applicazioni robuste, veloci e future-proof</p>
             
             <div class="tech-categories">
                 <!-- System & Services -->
@@ -422,11 +422,52 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Pricing Section -->
+    <section id="prezzi" class="cta-section">
         <div class="container">
-            <h2>Quanto Costa Creare un'App Mobile?</h2>
-            <p>Scopri quanto costa creare la tua app personalizzata. Richiedi un preventivo gratuito per il tuo progetto.</p>
+            <h2>Prezzi Trasparenti per Ogni Budget</h2>
+            <p>Le nostre app base partono da €1.500. Il costo finale dipende dalle funzionalità e dalla complessità del progetto.</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>App Base</h3>
+                    <div class="price">€1.500</div>
+                    <p>Perfetta per iniziare</p>
+                    <ul>
+                        <li>Design personalizzato</li>
+                        <li>5-7 schermate</li>
+                        <li>Funzionalità base</li>
+                        <li>Deploy su store</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>App Professionale</h3>
+                    <div class="price">€3.500</div>
+                    <p>Soluzione completa</p>
+                    <ul>
+                        <li>Design avanzato</li>
+                        <li>10-15 schermate</li>
+                        <li>Backend integrato</li>
+                        <li>Notifiche push</li>
+                        <li>Analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>App Enterprise</h3>
+                    <div class="price">Da €7.500</div>
+                    <p>Su misura per te</p>
+                    <ul>
+                        <li>Progetto personalizzato</li>
+                        <li>Funzionalità avanzate</li>
+                        <li>Integrazione sistemi</li>
+                        <li>Supporto dedicato</li>
+                        <li>Manutenzione inclusa</li>
+                    </ul>
+                </div>
+            </div>
+            
             <a href="#contatti" class="btn btn-primary btn-large">Richiedi Preventivo Gratuito</a>
         </div>
     </section>
@@ -467,7 +508,12 @@
             <p class="section-subtitle">Raccontaci la tua idea e scopri come creare un'app mobile di successo</p>
             
             <div class="contact-wrapper">
-                <form class="contact-form" action="/submit-contact" method="POST">
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    
                     <div class="form-group">
                         <label for="name">Nome e Cognome</label>
                         <input type="text" id="name" name="name" required>
@@ -507,7 +553,7 @@
                 
                 <div class="contact-info">
                     <h3>Parliamo del tuo progetto</h3>
-                    <p>Siamo qui per aiutarti a creare l'app perfetta per il tuo business.</p>
+                    <p>Siamo un team di designer e sviluppatori che per passione ha iniziato a creare app, trasformando poi questa passione in realtà professionale. Siamo qui per aiutarti a creare l'app perfetta per il tuo business.</p>
                     
                     <div class="info-item">
                         <strong>Email:</strong>
@@ -516,7 +562,7 @@
                     
                     <div class="info-item">
                         <strong>Telefono:</strong>
-                        <a href="tel:+39XXXXXXXXX">+39 XXX XXX XXXX</a>
+                        <a href="tel:+393297451593">+39 329 745 1593</a>
                     </div>
                     
                     <div class="info-item">
@@ -626,6 +672,18 @@
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="your-verification-code" />
+
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/393297451593?text=Ciao,%20vorrei%20informazioni%20per%20sviluppare%20un'app" target="_blank" rel="noopener">
+            <div class="whatsapp-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.406"/>
+                </svg>
+            </div>
+            <span>Scrivici su WhatsApp</span>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
