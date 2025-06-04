@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <!-- Homepage -->
     <url>
-        <loc>https://creareapp.it/</loc>
+        <loc>https://www.creareapp.it/</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -11,14 +11,14 @@
     
     <!-- Pagine Servizi Principali -->
     <url>
-        <loc>https://creareapp.it/sviluppo-app-native</loc>
+        <loc>https://www.creareapp.it/sviluppo-app-native</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/app-cross-platform</loc>
+        <loc>https://www.creareapp.it/app-cross-platform</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -26,42 +26,42 @@
     
     <!-- Pagine Tipologie App -->
     <url>
-        <loc>https://creareapp.it/app-vetrina</loc>
+        <loc>https://www.creareapp.it/app-vetrina</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/app-custom</loc>
+        <loc>https://www.creareapp.it/app-custom</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/mvp-startup</loc>
+        <loc>https://www.creareapp.it/mvp-startup</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/app-demo</loc>
+        <loc>https://www.creareapp.it/app-demo</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/dashboard-aziendali</loc>
+        <loc>https://www.creareapp.it/dashboard-aziendali</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/ecommerce-mobile</loc>
+        <loc>https://www.creareapp.it/ecommerce-mobile</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -69,28 +69,28 @@
     
     <!-- Pagine Informative -->
     <url>
-        <loc>https://creareapp.it/costo-sviluppo-app</loc>
+        <loc>https://www.creareapp.it/costo-sviluppo-app</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/guida-sviluppo-app</loc>
+        <loc>https://www.creareapp.it/guida-sviluppo-app</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/portfolio</loc>
+        <loc>https://www.creareapp.it/portfolio</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/blog</loc>
+        <loc>https://www.creareapp.it/blog</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
@@ -98,21 +98,21 @@
     
     <!-- Pagine Aziendali -->
     <url>
-        <loc>https://creareapp.it/chi-siamo</loc>
+        <loc>https://www.creareapp.it/chi-siamo</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/contatti</loc>
+        <loc>https://www.creareapp.it/contatti</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://creareapp.it/privacy</loc>
+        <loc>https://www.creareapp.it/privacy</loc>
         <lastmod>2024-01-06</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
