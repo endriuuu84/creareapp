@@ -1392,7 +1392,7 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 10000;
+    z-index: 9998; /* Lower than cookie banner */
 }
 
 .whatsapp-widget a {
@@ -1465,7 +1465,7 @@ p {
     background: var(--bg-card);
     border-top: 2px solid var(--neon-blue);
     padding: var(--spacing-lg);
-    z-index: 9999;
+    z-index: 10000; /* Higher than WhatsApp widget */
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
     transform: translateY(100%);
@@ -1581,6 +1581,178 @@ p {
         font-size: 0.85rem;
         padding: var(--spacing-xs) var(--spacing-md);
     }
+}
+
+/* Legal Pages Professional Style */
+.legal-page {
+    background: #ffffff;
+    color: #333333;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.7;
+}
+
+.legal-page .header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.legal-page .logo-text {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: none;
+    text-shadow: none;
+}
+
+.legal-page .hero {
+    background: #ffffff;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 120px 0 40px;
+}
+
+.legal-page .hero-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-shadow: none;
+    filter: none;
+    margin-bottom: 0.5rem;
+}
+
+.legal-page .hero-subtitle {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.legal-page .legal-content {
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.legal-page .legal-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 2rem 0 1rem 0;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-shadow: none;
+    filter: none;
+}
+
+.legal-page .legal-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 1.5rem 0 0.75rem 0;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-shadow: none;
+    filter: none;
+}
+
+.legal-page .legal-content ul,
+.legal-page .legal-content ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.legal-page .legal-content li {
+    margin: 0.5rem 0;
+    color: #374151;
+}
+
+.legal-page .legal-content a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.legal-page .legal-content a:hover {
+    border-bottom-color: #2563eb;
+    text-shadow: none;
+}
+
+.legal-page .legal-content strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.legal-page .legal-section {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.legal-page .legal-section h2,
+.legal-page .legal-section h3 {
+    color: #1f2937;
+    margin-top: 0;
+}
+
+.legal-page .legal-highlight {
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #92400e;
+}
+
+.legal-page .legal-note {
+    background: #dbeafe;
+    border: 1px solid #3b82f6;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #1e40af;
+}
+
+.legal-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.legal-page table th {
+    background: #f3f4f6;
+    color: #1f2937;
+    font-weight: 600;
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.legal-page table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #f3f4f6;
+    color: #374151;
+}
+
+.legal-page table tr:last-child td {
+    border-bottom: none;
 }
 
 /* Intersection Observer */
