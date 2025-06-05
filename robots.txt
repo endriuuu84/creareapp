@@ -8,7 +8,7 @@ Disallow: /private/
 Disallow: /tmp/
 
 # Sitemap
-Sitemap: https://creareapp.it/sitemap.xml
+Sitemap: https://www.creareapp.it/sitemap.xml
 
 # Crawl-delay per bot meno importanti
 User-agent: SemrushBot
