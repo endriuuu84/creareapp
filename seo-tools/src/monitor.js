@@ -11,14 +11,34 @@ class SEOMonitor {
   }
 
   async initializeAPIs() {
-    // Inizializza Google Search Console
-    const auth = new google.auth.OAuth2(
-      process.env.GOOGLE_SEARCH_CONSOLE_CLIENT_ID,
-      process.env.GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET
-    );
-    
-    this.searchConsole = google.searchconsole({ version: 'v1', auth });
-    this.analytics = google.analytics({ version: 'v3', auth });
+    // Carica token salvati
+    try {
+      const fs = require('fs');
+      const path = require('path');
+      const tokensPath = path.join(__dirname, '../tokens.json');
+      
+      if (fs.existsSync(tokensPath)) {
+        const tokenData = JSON.parse(fs.readFileSync(tokensPath, 'utf8'));
+        
+        // Inizializza Google Search Console con token
+        const auth = new google.auth.OAuth2(
+          process.env.GOOGLE_SEARCH_CONSOLE_CLIENT_ID,
+          process.env.GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET,
+          'https://creareapp-seo.netlify.app/auth/callback'
+        );
+        
+        auth.setCredentials(tokenData.tokens);
+        
+        this.searchConsole = google.searchconsole({ version: 'v1', auth });
+        this.analytics = google.analytics({ version: 'v3', auth });
+        
+        console.log('✅ APIs inizializzate con token salvati');
+      } else {
+        console.log('⚠️  Nessun token trovato. Esegui l\'autorizzazione prima.');
+      }
+    } catch (error) {
+      console.log('❌ Errore caricamento token:', error.message);
+    }
   }
 
   // Monitora posizioni keyword in Search Console

@@ -1,3 +1,6 @@
+# Domain redirects - apex to www
+https://creareapp.it/* https://www.creareapp.it/:splat 301!
+
 # Redirects per SEO
 /sviluppo-app /  301
 /crea-app /  301
