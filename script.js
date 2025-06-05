@@ -30,26 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Form submission handling
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would normally send the data to your server
-            console.log('Form submitted:', data);
-            
-            // Show success message (you can customize this)
-            alert('Grazie per la tua richiesta! Ti contatteremo presto.');
-            
-            // Reset form
-            contactForm.reset();
-        });
-    }
+    // Form submission is handled by Netlify - no JavaScript needed
     
     // Add animation on scroll
     const observerOptions = {
