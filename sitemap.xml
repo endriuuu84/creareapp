@@ -1,120 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage -->
     <url>
         <loc>https://www.creareapp.it/</loc>
-        <lastmod>2024-01-06</lastmod>
+        <lastmod>2025-06-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
-    <!-- Pagine Servizi Principali -->
+    <!-- Pagine Legali -->
     <url>
-        <loc>https://www.creareapp.it/sviluppo-app-native</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/app-cross-platform</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- Pagine Tipologie App -->
-    <url>
-        <loc>https://www.creareapp.it/app-vetrina</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/app-custom</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/mvp-startup</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/app-demo</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/dashboard-aziendali</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/ecommerce-mobile</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <!-- Pagine Informative -->
-    <url>
-        <loc>https://www.creareapp.it/costo-sviluppo-app</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/guida-sviluppo-app</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/portfolio</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/blog</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Pagine Aziendali -->
-    <url>
-        <loc>https://www.creareapp.it/chi-siamo</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/contatti</loc>
-        <lastmod>2024-01-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.creareapp.it/privacy</loc>
-        <lastmod>2024-01-06</lastmod>
+        <loc>https://www.creareapp.it/privacy-policy</loc>
+        <lastmod>2025-06-09</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    
+    <url>
+        <loc>https://www.creareapp.it/termini-servizio</loc>
+        <lastmod>2025-06-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.creareapp.it/cookie-policy</loc>
+        <lastmod>2025-06-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.creareapp.it/diritto-recesso</loc>
+        <lastmod>2025-06-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.creareapp.it/informazioni-societarie</loc>
+        <lastmod>2025-06-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Note: /contatti and /portfolio are sections in homepage, not separate pages -->
 </urlset>

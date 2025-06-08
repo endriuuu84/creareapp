@@ -6,10 +6,9 @@ https://creareapp.it/* https://www.creareapp.it/:splat 301!
 /crea-app /  301
 /sviluppo-applicazioni /  301
 
-# Trailing slash redirects
-/servizi /servizi/  301
-/portfolio /portfolio/  301
-/contatti /contatti/  301
+# Redirect to homepage sections
+/portfolio /#portfolio  301
+/contatti /#contatti  301
 
 # Form submissions
 /submit-contact /.netlify/functions/contact-form  200
