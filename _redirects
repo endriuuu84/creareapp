@@ -10,5 +10,15 @@ https://creareapp.it/* https://www.creareapp.it/:splat 301!
 /portfolio /#portfolio  301
 /contatti /#contatti  301
 
+# Fix pagine non esistenti segnalate da Search Console
+/blog /  301
+/privacy /privacy-policy  301
+/app-demo /#tipologie  301
+/mvp-startup /#tipologie  301
+/app-vetrina /#tipologie  301
+/ecommerce-mobile /#tipologie  301
+/dashboard-aziendali /#tipologie  301
+/guida-sviluppo-app /#processo  301
+
 # Form submissions
 /submit-contact /.netlify/functions/contact-form  200
