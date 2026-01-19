@@ -55,38 +55,38 @@
     <!-- Pagine Legali -->
     <url>
         <loc>https://www.creareapp.it/privacy-policy</loc>
-        <lastmod>2025-06-09</lastmod>
+        <lastmod>2025-01-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <url>
         <loc>https://www.creareapp.it/termini-servizio</loc>
-        <lastmod>2025-06-09</lastmod>
+        <lastmod>2025-01-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <url>
         <loc>https://www.creareapp.it/cookie-policy</loc>
-        <lastmod>2025-06-09</lastmod>
+        <lastmod>2025-01-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <url>
         <loc>https://www.creareapp.it/diritto-recesso</loc>
-        <lastmod>2025-06-09</lastmod>
+        <lastmod>2025-01-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <url>
         <loc>https://www.creareapp.it/informazioni-societarie</loc>
-        <lastmod>2025-06-09</lastmod>
+        <lastmod>2025-01-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
-    
+
     <!-- Note: /contatti and /portfolio are sections in homepage, not separate pages -->
 </urlset>
